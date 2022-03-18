@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slylelogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>signup Form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="login-email" onsubmit="signup(event)">
+            <p class="login-text" style="font-size:2rem;font-weight:800;">Entrer vos Données</p>
+            <div class="input-group">
+                <input type="text"  id="nom"placeholder="nom" required>
+            </div>
+            <div class="input-group">
+                <input type="text"  id="prenom"placeholder="prenom" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" onchange="removeError()" placeholder="E-mail" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="pass" placeholder="mot de passe" required>
+            </div>
+            <div class="input-group">
+                <p id="result"></p>
+            </div>
+            <div class="input-group">
+                <button class="btn" type="submit">sign up</button>
+            </div>
+            <p class="login-register-text">do you have an account? <a href="login.html">login</a></p>
+        </form>
+    </div>
+</body>
+<script src="authenLS.js"></script>
+</html>
